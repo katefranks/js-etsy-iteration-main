@@ -12,58 +12,54 @@
 //
 //////////// STEP 1 /////////////
 
-const pricesArray = items.map(function(item){
-  return item.price;
-});
-
-const totalPrice = pricesArray.reduce(function(acc, i){
-  return acc + i;
-});
-
-const avgPrices = (totalPrice/items.length);
-
-console.log(avgPrices);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function avgPrices(arr) {
-//   const result = [ ];
+// const pricesArray = items.map(function(item){
+//   return item.price;
+// });
 //
-//   for(let i = 0; i<arr.length; i++) {
-//     result[arr[i][0]] = arr[[i][1]];
+// const totalPrice = pricesArray.reduce(function(acc, i){
+//   return acc + i;
+// });
 //
-// // ******below breaks out the above to make it easier to read, but is the same
-//     // let arr = arr[i]; // ['name', 'Charlie']
-//     // let key = nestedArr[0];
-//     // let value = nestedArray [1];
-//     //
-//     // result[key] = value;
+// const avgPrices = (totalPrice/items.length);
 //
-//     // result ['name'] = 'charlie';
-//   }
-//   return result;
+// console.log(avgPrices);
+
+//////////// STEP 2 /////////////
+
+//"Items that cost between $14.00 USD and $18.00 USD:"//
+// const pricesArray = items.map(function(item){
+//   return item.price;
+// });
+//
+// console.log(pricesArray);
+//
+// const filterPrices = items.filter(function(item){
+//
+// })
+// //////////////////////////////
+// function isBigEnough(value) {
+//   return value >= 10
 // }
+//
+// let filtered = [12, 5, 8, 130, 44].filter(isBigEnough)
+// filtered is [12, 130, 44]
+/////////////////////////
 
-// const prices = []
-// items['price'];
-//
-// console.log(prices);
-//
-// for(const key['price'] in items) {
-//     console.log(key, student[key]);
-//
+
+  let lower = 14;
+  let upper = 18;
+  let filterPrices = items.filter(function(item) {
+    return (item.price >= lower && item.price <= upper);
+  });
+
+  console.log(filterPrices);
+//////////////////////////
+
+// let lower = 14;
+// let upper = 18;
+//   function filterByID(item) {
+//     if (items.price >= lower && items.price <= upper) {
+//       return item;
+//     }
+// }
+// console.log(filterByID);
