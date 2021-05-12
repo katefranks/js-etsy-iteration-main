@@ -70,13 +70,17 @@
 
 ////////////// STEP 3 ////////////////////////
 //find the item with a "GBP" currency code
+
 //// The following console.logs the entire object w/ the GBP currency.
-let currency = "GBP";
-let filterCurrency = items.filter(function(item) {
-  return item.currency_code == currency;
-});
-//
-console.log(filterCurrency);
+
+// let currency = "GBP";
+// let filterCurrency = items.filter(function(item) {
+//   return item.currency_code == currency;
+// });
+// //
+// console.log(filterCurrency);
+
+
 
 ///// Trying to figure out how to show just the title & price.
 
@@ -85,3 +89,42 @@ console.log(filterCurrency);
 // console.log(a.title);
 
 // console.log(filterCurrency['title']);
+
+///////////////// STEP 4 ////////////////////
+// find which items are made of wood//
+
+// let material = "wood";
+// let sortMaterial = items.sort(function(item) {
+//   return item.materials == material;
+// });
+// //
+// console.log(sortMaterial);
+// //////////////////
+//
+
+
+function isWood(materialType) {
+  return materialType.materials.wood == 'wood';
+}
+
+// console.log(items.find(isWood));
+
+
+
+
+// items.materials.wood.sort();
+// console.log(items);
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////// STEP 5 ////////////////////
